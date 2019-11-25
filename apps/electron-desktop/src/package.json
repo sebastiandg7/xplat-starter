@@ -1,0 +1,49 @@
+{
+  "name": "desktop",
+  "version": "1.0.0",
+  "description": "Desktop description.",
+  "main": "index.js",
+  "author": {
+    "name": "Your name",
+    "email": "name@company.com"
+  },
+  "homepage": "https://nstudio.io/xplat",
+  "repository": {
+    "url": "https://github.com/nstudio/xplat"
+  },
+  "license": "MIT",
+  "build": {
+    "appId": "com.company.desktop",
+    "productName": "Desktop",
+    "copyright": "Copyright © 2018-2019 myorg",
+    "asar": false,
+    "npmRebuild": false,
+    "directories": {
+      "buildResources": "icons",
+      "output": "../electrondesktop-packages"
+    },
+    "mac": {
+      "category": "public.app-category.developer-tools",
+      "icon": "icon.png"
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "icon.ico"
+    },
+    "linux": {
+      "icon": "icon.png",
+      "target": [
+        "AppImage",
+        "deb",
+        "tar.gz"
+      ],
+      "synopsis": "Desktop",
+      "category": "Development"
+    },
+    "nsis": {
+      "createDesktopShortcut": "always",
+      "installerIcon": "icon.ico",
+      "artifactName": "Desktop-Setup-${version}.${ext}"
+    }
+  }
+}

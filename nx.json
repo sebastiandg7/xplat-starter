@@ -19,6 +19,15 @@
     },
     "web-browser": {
       "tags": []
+    },
+    "web-desktop-e2e": {
+      "tags": []
+    },
+    "web-desktop": {
+      "tags": []
+    },
+    "electron-desktop": {
+      "tags": []
     }
   }
 }
