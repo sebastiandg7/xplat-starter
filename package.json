@@ -29,7 +29,7 @@
     "postinstall": "electron-rebuild install-app-deps",
     "postinstall.electron": "node tools/electron/postinstall",
     "postinstall.web": "node tools/web/postinstall",
-    "build.electron.desktop": "npm run prepare.electron.desktop && ng build electron-desktop --prod --base-href ./",
+    "build.electron.desktop": "npm run prepare.electron.desktop && nx build electron-desktop --prod --base-href ./",
     "build.electron.desktop.local": "npm run build.electron.desktop && electron dist/apps/electron-desktop",
     "build.electron.desktop.linux": "npm run build.electron.desktop && cd dist/apps/electron-desktop && npx electron-builder build --linux",
     "build.electron.desktop.windows": "npm run build.electron.desktop && cd dist/apps/electron-desktop && npx electron-builder build --windows",
