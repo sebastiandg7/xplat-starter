@@ -7,5 +7,18 @@
     "tslint.json": "*",
     "nx.json": "*"
   },
-  "projects": {}
+  "projects": {
+    "libs": {
+      "tags": []
+    },
+    "xplat": {
+      "tags": []
+    },
+    "web-browser-e2e": {
+      "tags": []
+    },
+    "web-browser": {
+      "tags": []
+    }
+  }
 }

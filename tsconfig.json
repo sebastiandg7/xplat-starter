@@ -15,7 +15,11 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@myorg/*": ["libs/*"],
+      "@myorg/web": ["xplat/web/index.ts"],
+      "@myorg/web/*": ["xplat/web/*"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
