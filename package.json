@@ -23,7 +23,7 @@
     "workspace-schematic": "nx workspace-schematic",
     "dep-graph": "nx dep-graph",
     "help": "nx help",
-    "clean": "npx rimraf hooks node_modules package-lock.json && npm i",
+    "clean": "npx rimraf -- hooks node_modules package-lock.json && npm i",
     "start.web.browser": "nx serve web-browser",
     "start.web.desktop": "npm run postinstall.web && nx serve web-desktop",
     "postinstall": "electron-rebuild install-app-deps",
@@ -37,7 +37,11 @@
     "prepare.electron.desktop": "npm run postinstall.electron && tsc -p apps/electron-desktop/tsconfig.json",
     "serve.electron.desktop.target": "nx serve electron-desktop",
     "serve.electron.desktop": "wait-on http-get://localhost:4200/ && electron apps/electron-desktop/src --serve",
-    "start.electron.desktop": "npm run prepare.electron.desktop && npm-run-all -p serve.electron.desktop.target serve.electron.desktop"
+    "start.electron.desktop": "npm run prepare.electron.desktop && npm-run-all -p serve.electron.desktop.target serve.electron.desktop",
+    "start.nativescript.mobile.ios": "cd apps/nativescript-mobile && tns run ios --emulator",
+    "start.nativescript.mobile.android": "cd apps/nativescript-mobile && tns run android --emulator",
+    "start.nativescript.mobile.preview": "cd apps/nativescript-mobile && tns preview",
+    "clean.nativescript.mobile": "cd apps/nativescript-mobile && npx rimraf -- hooks node_modules platforms package-lock.json && npm i && npx rimraf -- package-lock.json"
   },
   "private": true,
   "dependencies": {
@@ -55,7 +59,11 @@
     "@myorg/scss": "file:libs/scss",
     "@ngx-translate/core": "~11.0.0",
     "@ngx-translate/http-loader": "~4.0.0",
-    "reflect-metadata": "^0.1.12"
+    "reflect-metadata": "^0.1.12",
+    "nativescript-theme-core": "^1.0.4",
+    "tns-core-modules": "~6.2.0",
+    "nativescript-angular": "~8.20.0",
+    "nativescript-ngx-fonticon": "^4.2.0"
   },
   "devDependencies": {
     "@nrwl/workspace": "8.8.2",
@@ -93,7 +101,12 @@
     "electron-store": "~2.0.0",
     "electron-updater": "~4.0.6",
     "npm-run-all": "^4.1.5",
-    "wait-on": "~3.2.0"
+    "wait-on": "~3.2.0",
+    "@nstudio/nativescript-angular": "8.0.13",
+    "@nstudio/nativescript": "8.0.13",
+    "node-sass": "^4.12.0",
+    "terser-webpack-plugin": "~2.2.0",
+    "tns-platform-declarations": "~6.2.0"
   },
   "xplat": {
     "prefix": "myorg",

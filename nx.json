@@ -28,6 +28,9 @@
     },
     "electron-desktop": {
       "tags": []
+    },
+    "nativescript-mobile": {
+      "tags": []
     }
   }
 }

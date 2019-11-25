@@ -10,18 +10,42 @@
     "importHelpers": true,
     "target": "es2015",
     "module": "esnext",
-    "typeRoots": ["node_modules/@types"],
-    "lib": ["es2017", "dom"],
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "lib": [
+      "es2017",
+      "dom"
+    ],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@myorg/*": ["libs/*"],
-      "@myorg/web": ["xplat/web/index.ts"],
-      "@myorg/web/*": ["xplat/web/*"],
-      "@myorg/electron": ["xplat/electron/index.ts"],
-      "@myorg/electron/*": ["xplat/electron/*"]
+      "@myorg/*": [
+        "libs/*"
+      ],
+      "@myorg/web": [
+        "xplat/web/index.ts"
+      ],
+      "@myorg/web/*": [
+        "xplat/web/*"
+      ],
+      "@myorg/electron": [
+        "xplat/electron/index.ts"
+      ],
+      "@myorg/electron/*": [
+        "xplat/electron/*"
+      ],
+      "@myorg/nativescript": [
+        "xplat/nativescript/index.ts"
+      ],
+      "@myorg/nativescript/*": [
+        "xplat/nativescript/*"
+      ]
     }
   },
-  "exclude": ["node_modules", "tmp"]
+  "exclude": [
+    "node_modules",
+    "tmp"
+  ]
 }
