@@ -28,12 +28,13 @@
   "dependencies": {},
   "devDependencies": {
     "@nrwl/workspace": "8.8.2",
+    "@nstudio/xplat": "^8.0.13",
     "@types/node": "~8.9.4",
     "dotenv": "6.2.0",
+    "eslint": "6.1.0",
+    "prettier": "1.18.2",
     "ts-node": "~7.0.0",
     "tslint": "~5.11.0",
-    "eslint": "6.1.0",
-    "typescript": "~3.5.3",
-    "prettier": "1.18.2"
+    "typescript": "~3.5.3"
   }
 }

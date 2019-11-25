@@ -2,7 +2,7 @@
   "version": 1,
   "projects": {},
   "cli": {
-    "defaultCollection": "@nrwl/workspace"
+    "defaultCollection": "@nstudio/xplat"
   },
   "schematics": {
     "@nrwl/workspace": {
