@@ -92,7 +92,7 @@
     "@nrwl/cypress": "8.8.2",
     "@nstudio/electron-angular": "8.0.13",
     "@nstudio/electron": "8.0.13",
-    "electron": "^7.2.4",
+    "electron": "^9.4.0",
     "electron-builder": "^20.38.4",
     "electron-rebuild": "~1.8.4",
     "electron-installer-dmg": "~3.0.0",
